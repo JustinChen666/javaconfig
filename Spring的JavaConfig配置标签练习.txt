@@ -1,0 +1,10 @@
+@Configuration:spring的配置标签,打在某个类上,该类就可以被识别为spring的配置类;
+@Bean:打在方法上,该方法返回的实例交给spring容器管理;
+@Component:打在类上,是该类能被扫描时扫描到;
+@ComponentScan:打在某个配置类上,该配置类就可以扫描该类所在的包以及子包中的组件类;
+@Import:打在某个配置类上,引入其它的配置类;
+@ImportResource:打在某个配置类上,导入xml配置文件;
+@PropertySource:打在某个配置类上,导入properties配置文件;
+@Profile("test"):打在某个配置类上,给当前配置类取一个名字叫test;
+@ActiveProfiles("test")打在主配置类上,执行指定的这个test类配置;
+
